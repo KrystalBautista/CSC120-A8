@@ -22,6 +22,22 @@ public class Student {
         return this.name + " ID: " + this.id + " Class Year: " + this.classYear;
     }
 
+    public static class Course{
+        private String name;
+        private String code;
+        private String schedule;
+
+        public Course(String name, String code, String schedule){
+            this.name = name;
+            this.code = code;
+            this.schedule = schedule;
+        }
+
+        public String toString(){
+            return name + " (" + code + ")" + schedule;
+        }
+    }
+
     public static void main(String[] args) {
         Student ab = new Student("Ab", "9909abc", 2014);
         System.out.println(ab);
